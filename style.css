@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    Padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+.navbar .logo{
+    display: flex ;
+    align-items: center;
+    margin: 8px;
+}
+
+.logo img {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.navbar .searchbar{
+    display: flex;
+    height: 32px;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    border: 1px solid #cccccc;
+    width:600px;
+    margin-right:10px;
+    border-radius: 50px;
+    height: 100%;
+    
+    
+}
+
+.search input{
+    border: none ;
+    width: 90%;
+    padding-left:5px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.search button{
+    border: none;
+    border-left: 1px solid #cccccc;
+    width:10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.search button i{
+    margin: 0%;
+   
+}
+
+.material-icons{
+    color: #606060;
+    margin-right: 10px;
+    padding: 3px;
+}
+
+.material-icons:hover{
+    color: #cccccc;
+    cursor: pointer;
+}
+
+.mainbody{
+    display:flex;
+    height: calc(100vh - 56px);
+    overflow: hidden;
+}
+
+.categories {
+    width: 240px;
+    height: 100%;
+    background: white;
+    overflow-y: scroll;
+
+}
+
+.category-sections{
+    border-bottom: 1px solid #cccccc;
+    margin-top: 10px;
+}
+
+.category-sections .category img{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin: 22px;
+    padding: 3px;
+    align-items: center;
+}
+
+.showmore{
+    padding-left: 0;
+    border: #606060;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin: 22px;
+    padding: 3px;
+    align-items: center;
+}
+
+
+.category-sections:last-child{
+    border-bottom: 1px solid #cccccc;
+    margin-top: 10px;
+}
+
+.category_heading{
+    margin-left: 25px;
+    margin: 10px 0px 10px 25px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #606060;
+}
+
+.category{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-inline: 0 24px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    
+}
+
+.category:hover{
+    background-color: #f9f9f9;
+}
+.active{
+    background-color: #d0d0d0;
+    font-weight: 500;
+}
+.active:hover{
+    background-color: #d0d0d0;
+}
+
+.active i{
+    color: red;
+}
+
+.category i{
+    margin-right: 29px;
+    margin-left: 28px;
+}
+
+.categories-footer{
+    padding: 20px;
+}
+
+.footer-section{
+    margin-bottom: 12px;
+}
+
+.footer-section span{
+    font-size: 13px;
+    font-weight: 500px;
+    margin-right: 5px;
+    color: #606060;
+    cursor: pointer;
+}
+
+.cpyright{
+    color: #606060;
+    font-size: 13px;
+    font-weight: 400px;
+    margin-bottom: 20px;
+}
+
+.videos {
+    width: calc(100vw - 240px);
+    height:100%;
+    background: #f9f9f9;
+    border-top: 1px solid #cccccc;
+    overflow-y: scroll;
+
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.video{
+    width: calc(25%-12px);
+    margin-right: 12px;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+
+.video .thumbnail img {
+    width: 100%;
+}
+
+.video .details{
+    display: flex;
+    margin-top: 5px;
+    width: 90%;
+    line-height: 20px;
+}
+
+.video .profile{
+ margin-right: 12px;
+}
+
+.video .profile img{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+
+.video .video-details p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.video .posted-by{
+    font-size: 14px;
+    font-weight: 500;
+    color: #606060;
+}
