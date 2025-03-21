@@ -23,6 +23,16 @@ body {
     background: white;
 }
 
+.navigation-icons > img{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.navigation-icons > img:hover{
+    cursor: pointer;
+}
+
 .navbar .logo{
     display: flex ;
     align-items: center;
@@ -221,6 +231,11 @@ body {
 
 .video .thumbnail img {
     width: 100%;
+    border-radius: 10px;
+}
+
+.thumbnail {
+    border-radius: 20px;
 }
 
 .video .details{
